@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TAMARA & MARYAM — Liverpool Fan Experience</title>
+  <meta name="description" content="Tamara & Maryam — a Liverpool FC fan experience.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="intro" class="intro">
+    <div class="intro-mark">YNWA</div>
+    <div class="intro-line"></div>
+    <p>TAMARA & MARYAM</p>
+    <button id="enterBtn">ENTER ANFIELD <span>→</span></button>
+    <p class="intro-note">SOUND ON • THE KOP IS WAITING</p>
+  </div>
+
+  <header class="nav">
+    <a class="brand" href="#home"><span class="brand-dot"></span>TAMARA <b>&</b> MARYAM</a>
+    <nav>
+      <a href="#match">MATCH</a>
+      <a href="#players">PLAYERS</a>
+      <a href="#trophies">TROPHIES</a>
+      <a href="#fan-zone">FAN ZONE</a>
+    </nav>
+    <button id="menuBtn" class="menu-btn">☰</button>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="hero-noise"></div>
+      <div class="hero-content reveal">
+        <p class="eyebrow">LIVERPOOL FC • FAN EXPERIENCE</p>
+        <h1>THIS IS<br><span>ANFIELD.</span></h1>
+        <p class="hero-copy">A red world built by <strong>Tamara & Maryam</strong> — matchdays, memories, legends and the sound of the Kop.</p>
+        <div class="hero-actions">
+          <a class="primary" href="#match">MATCH CENTER <span>↗</span></a>
+          <a class="ghost" href="#fan-zone">ENTER FAN ZONE</a>
+        </div>
+      </div>
+      <div class="hero-side">
+        <span>EST. 1892</span>
+        <span>THE REDS</span>
+        <span>ANFIELD • L4</span>
+      </div>
+      <div class="scroll">SCROLL <span></span></div>
+    </section>
+
+    <section id="match" class="match-section section">
+      <div class="section-head">
+        <div><p class="eyebrow">MATCH CENTER</p><h2>NEXT UP.</h2></div>
+        <span class="live-dot">● LIVE DATA STYLE</span>
+      </div>
+      <div class="match-card reveal">
+        <div class="match-top">
+          <span>PREMIER LEAGUE</span><span>11 OCT 2026 • ANFIELD</span>
+        </div>
+        <div class="teams">
+          <div class="team"><div class="crest lfc">LFC</div><h3>LIVERPOOL</h3></div>
+          <div class="versus"><small>15:30</small><b>VS</b><small>ANFIELD</small></div>
+          <div class="team"><div class="crest city">MC</div><h3>MAN CITY</h3></div>
+        </div>
+        <div class="match-bottom"><span>Premier League</span><a href="https://www.liverpoolfc.com/matches/mens-team/fixtures" target="_blank" rel="noopener">OFFICIAL FIXTURES ↗</a></div>
+      </div>
+      <div class="ticker"><span>RED ALERT</span><div>ALL FIXTURE TIMES ARE SUBJECT TO CHANGE • CHECK THE OFFICIAL LFC FIXTURE LIST BEFORE MATCHDAY • YOU'LL NEVER WALK ALONE</div></div>
+    </section>
+
+  <audio id="siteMusic" preload="auto" loop>
+    <source src="assets/youll-never-walk-alone.mp3" type="audio/mpeg">
+  </audio>
+  <div id="musicDock" class="music-dock" aria-label="Music controls">
+    <button id="musicToggle" type="button" aria-label="Pause music">❚❚</button>
+    <span>YNWA</span>
+  </div>
+
+    <section id="players" class="players section">
+      <div class="section-head">
+        <div><p class="eyebrow">THE REDS</p><h2>PLAYERS.</h2></div>
+        <p class="muted">A fan-made snapshot of the squad.</p>
+      </div>
+      <div class="player-grid">
+        <article data-player="alisson" class="player-card p1" style="--player-img:url('https://contentfulproxy.stadion.io/rm6ms1yxue4m/5CEGeevZGBvAA5zNQ9cYx5/31b98bde600b3c5db16ad05eea1904cb/alisson-becker-hero-image.jpg?f=face&fit=fill&fm=webp&h=1016&w=2000')">
+          <div class="player-number">01</div><div class="player-info"><span>GOALKEEPER</span><h3>ALISSON</h3><p>THE LAST LINE</p></div>
+        </article>
+        <article data-player="vandijk" class="player-card p2" style="--player-img:url('https://contentfulproxy.stadion.io/rm6ms1yxue4m/3fgCKD486xvUX9dd8ZUCns/77746e0876717bc7180e960506ff17f8/virgil-van-dijk-hero-image.jpg?f=face&fit=fill&fm=webp&h=1015&w=2000')">
+          <div class="player-number">04</div><div class="player-info"><span>DEFENDER • CAPTAIN</span><h3>VAN DIJK</h3><p>THE CAPTAIN</p></div>
+        </article>
+        <article data-player="wirtz" class="player-card p3" style="--player-img:url('https://contentfulproxy.stadion.io/rm6ms1yxue4m/6085H6wrCRnwjZxgLOWJ04/defc00147d03203321adca8cc53348c2/florian-wirtz-hero-image.jpg?f=face&fit=fill&fm=webp&h=1016&w=2000')">
+          <div class="player-number">07</div><div class="player-info"><span>MIDFIELDER</span><h3>WIRTZ</h3><p>THE CREATIVE 7</p></div>
+        </article>
+        <article data-player="szoboszlai" class="player-card p4" style="--player-img:url('https://contentfulproxy.stadion.io/rm6ms1yxue4m/6JvBmGKOwg4qOwhJ3dJX5Y/958f996fb1a829a47f97b5a20e4513a5/dominik-szoboszlai-hero-image.jpg?f=face&fit=fill&fm=webp&h=1016&w=2000')">
+          <div class="player-number">08</div><div class="player-info"><span>MIDFIELDER • VICE-CAPTAIN</span><h3>SZOBOSZLAI</h3><p>POWER & PRECISION</p></div>
+        </article>
+      </div>
+    </section>
+
+    <section id="trophies" class="trophies section">
+      <div class="section-head"><div><p class="eyebrow">THE CABINET</p><h2>TROPHY ROOM.</h2></div></div>
+      <div class="trophy-layout">
+        <div class="big-trophy">🏆</div>
+        <div class="trophy-list">
+          <div><strong>20</strong><span>LEAGUE TITLES</span></div>
+          <div><strong>6</strong><span>EUROPEAN CUPS</span></div>
+          <div><strong>8</strong><span>FA CUPS</span></div>
+          <div><strong>10</strong><span>LEAGUE CUPS</span></div>
+          <div><strong>1</strong><span>FIFA CLUB WORLD CUP</span></div>
+        </div>
+      </div>
+      <p class="source-note">Honours figures follow Liverpool FC's official club information.</p>
+    </section>
+
+    <section id="fan-zone" class="fan-zone section">
+      <div class="fan-copy">
+        <p class="eyebrow">THE KOP</p>
+        <h2>TURN IT<br><span>RED.</span></h2>
+        <p>Press play, turn the volume up and let Anfield's anthem take over the room.</p>
+        <button id="soundBtn" class="primary">▶ PLAY YOU'LL NEVER WALK ALONE</button>
+      </div>
+      <div class="anthem">
+        <div class="anthem-bars" aria-hidden="true"></div>
+        <div class="anthem-title">YOU'LL NEVER<br><strong>WALK ALONE</strong></div>
+        <div class="anthem-sub">TAMARA & MARYAM • FAN ANTHEM</div>
+      </div>
+      <div id="youtubeWrap" class="youtube-wrap hidden">
+        <iframe id="anthemFrame" src="https://www.youtube.com/embed/HBWmj8uMC4k?rel=0" title="You'll Never Walk Alone in full voice at Wembley — Liverpool FC" allow="autoplay; encrypted-media; picture-in-picture" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section id="games" class="games section">
+      <div class="section-head"><div><p class="eyebrow">FAN GAMES</p><h2>YOUR TURN.</h2></div></div>
+      <div class="game-grid">
+        <button class="game-card" data-game="quiz"><span>01</span><b>LFC QUIZ</b><small>TEST YOUR RED KNOWLEDGE</small></button>
+        <button class="game-card" data-game="penalty"><span>02</span><b>PENALTY</b><small>BEAT THE KEEPER</small></button>
+        <button class="game-card" data-game="guess"><span>03</span><b>GUESS THE RED</b><small>WHO'S THE PLAYER?</small></button>
+      </div>
+      <div id="gameBox" class="game-box hidden"></div>
+    </section>
+
+    <section class="signature">
+      <p>ONE CLUB. ONE CITY. ONE EXPERIENCE.</p>
+      <h2>TAMARA <span>&</span> MARYAM</h2>
+      <div class="signature-line"></div>
+      <small>FAN-MADE PROJECT • NOT AFFILIATED WITH LIVERPOOL FC</small>
+    </section>
+  
+    <div id="playerModal" class="player-modal hidden" role="dialog" aria-modal="true" aria-labelledby="modalName">
+      <div class="player-modal-backdrop" data-close-player></div>
+      <div class="player-modal-card">
+        <button class="player-close" type="button" data-close-player aria-label="Close">×</button>
+        <div id="modalVisual" class="modal-visual"></div>
+        <div class="modal-details">
+          <p id="modalMeta" class="eyebrow"></p>
+          <h2 id="modalName"></h2>
+          <p id="modalBio" class="modal-bio"></p>
+          <div id="modalStats" class="modal-stats"></div>
+        </div>
+      </div>
+    </div>
+</main>
+
+  <footer><span>© 2026 TAMARA & MARYAM</span><a href="https://www.liverpoolfc.com/" target="_blank" rel="noopener">LIVERPOOL FC OFFICIAL SITE ↗</a></footer>
+  <script src="script.js"></script>
+</body>
+</html>
